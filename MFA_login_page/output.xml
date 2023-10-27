@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on darwin)" generated="20231027 11:05:22.285" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSuite" source="/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/MFA_login_page/TestSuite.robot">
+<kw name="New Browser" library="Browser" type="SETUP">
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20231027 11:05:24.410" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/MFA_login_page/browser/traces/8b5b9a6b-4187-4882-aec2-ec3ce666c2b9"}</msg>
+<msg timestamp="20231027 11:05:26.615" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/MFA_login_page/browser/traces/8b5b9a6b-4187-4882-aec2-ec3ce666c2b9"}</msg>
+<status status="PASS" starttime="20231027 11:05:24.408" endtime="20231027 11:05:26.615"/>
+</kw>
+<test id="s1-t1" name="Login with MFA" line="14">
+<kw name="New Context" library="Browser" type="SETUP">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20231027 11:05:26.621" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg timestamp="20231027 11:05:26.697" level="INFO">Successfully created context. </msg>
+<msg timestamp="20231027 11:05:26.697" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<status status="PASS" starttime="20231027 11:05:26.620" endtime="20231027 11:05:26.697"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://seleniumbase.io/realworld/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20231027 11:05:30.347" level="INFO">Successfully initialized new page object and opened url: https://seleniumbase.io/realworld/login</msg>
+<status status="PASS" starttime="20231027 11:05:26.697" endtime="20231027 11:05:30.347"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=username</arg>
+<arg>demo_user</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 11:05:30.348" level="INFO">Fills the text 'demo_user' in the given field.</msg>
+<status status="PASS" starttime="20231027 11:05:30.348" endtime="20231027 11:05:30.423"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=password</arg>
+<arg>secret_pass</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 11:05:30.424" level="INFO">Fills the text 'secret_pass' in the given field.</msg>
+<status status="PASS" starttime="20231027 11:05:30.424" endtime="20231027 11:05:30.505"/>
+</kw>
+<kw name="Get Totp">
+<var>${totp}</var>
+<arg>GAXG2MTEOR3DMMDG</arg>
+<msg timestamp="20231027 11:05:30.509" level="FAIL">No keyword with name 'Get Totp' found. Did you mean:
+    Browser.Get Text</msg>
+<status status="FAIL" starttime="20231027 11:05:30.508" endtime="20231027 11:05:30.509"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=totpcode</arg>
+<arg>${totp}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20231027 11:05:30.509" endtime="20231027 11:05:30.509"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>"Sign in"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20231027 11:05:30.509" endtime="20231027 11:05:30.509"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>h1</arg>
+<arg>==</arg>
+<arg>Welcome!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20231027 11:05:30.510" endtime="20231027 11:05:30.510"/>
+</kw>
+<kw name="Close Context" library="Browser" type="TEARDOWN">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<msg timestamp="20231027 11:05:30.518" level="INFO">[
+  {
+    "type": "chromium",
+    "id": "browser=532baa1b-ab14-4a56-8471-ede8aeec9847",
+    "contexts": [
+      {
+        "type": "context",
+        "id": "context=cde38188-e47a-4ee7-ac75-7f4c30ff3e6d",
+        "activePage": "page=133cdb42-56ff-4331-89ec-c1142cf51f71",
+        "pages": [
+          {
+            "type": "page",
+            "title": "Login / MFA Demo App",
+            "url": "https://seleniumbase.io/realworld/login",
+            "id": "page=133cdb42-56ff-4331-89ec-c1142cf51f71",
+            "timestamp": 1698393929.158
+          }
+        ]
+      }
+    ],
+    "activeContext": "context=cde38188-e47a-4ee7-ac75-7f4c30ff3e6d",
+    "activeBrowser": true
+  }
+]</msg>
+<msg timestamp="20231027 11:05:30.518" level="INFO">Switching browser to CURRENT</msg>
+<msg timestamp="20231027 11:05:30.522" level="INFO">Returned active browser id. CURRENT</msg>
+<msg timestamp="20231027 11:05:30.522" level="INFO">Switching browser to browser=532baa1b-ab14-4a56-8471-ede8aeec9847</msg>
+<msg timestamp="20231027 11:05:30.528" level="INFO">Successfully changed active browser: browser=532baa1b-ab14-4a56-8471-ede8aeec9847</msg>
+<msg timestamp="20231027 11:05:30.528" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg timestamp="20231027 11:05:30.535" level="INFO">Returned active context id: CURRENT</msg>
+<msg timestamp="20231027 11:05:30.536" level="INFO">Switching context to context=cde38188-e47a-4ee7-ac75-7f4c30ff3e6d in CURRENT</msg>
+<msg timestamp="20231027 11:05:30.544" level="INFO">[
+  {
+    "type": "chromium",
+    "id": "browser=532baa1b-ab14-4a56-8471-ede8aeec9847",
+    "contexts": [
+      {
+        "type": "context",
+        "id": "context=cde38188-e47a-4ee7-ac75-7f4c30ff3e6d",
+        "activePage": "page=133cdb42-56ff-4331-89ec-c1142cf51f71",
+        "pages": [
+          {
+            "type": "page",
+            "title": "Login / MFA Demo App",
+            "url": "https://seleniumbase.io/realworld/login",
+            "id": "page=133cdb42-56ff-4331-89ec-c1142cf51f71",
+            "timestamp": 1698393929.158
+          }
+        ]
+      }
+    ],
+    "activeContext": "context=cde38188-e47a-4ee7-ac75-7f4c30ff3e6d",
+    "activeBrowser": true
+  }
+]</msg>
+<msg timestamp="20231027 11:05:30.548" level="INFO">Successfully changed active context: context=cde38188-e47a-4ee7-ac75-7f4c30ff3e6d</msg>
+<msg timestamp="20231027 11:05:30.643" level="INFO">Successfully closed Context</msg>
+<status status="PASS" starttime="20231027 11:05:30.510" endtime="20231027 11:05:30.643"/>
+</kw>
+<status status="FAIL" starttime="20231027 11:05:26.616" endtime="20231027 11:05:30.644">No keyword with name 'Get Totp' found. Did you mean:
+    Browser.Get Text</status>
+</test>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20231027 11:05:30.806" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20231027 11:05:30.654" endtime="20231027 11:05:30.807"/>
+</kw>
+<status status="FAIL" starttime="20231027 11:05:22.287" endtime="20231027 11:05:30.807"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestSuite">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231027 11:05:23.351" level="ERROR">Error in file '/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/MFA_login_page/TestSuite.robot' on line 3: Importing library '/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/MFA_login_page/totp.py' failed: ModuleNotFoundError: No module named 'pyotp'
+Traceback (most recent call last):
+  File "/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/MFA_login_page/totp.py", line 1, in &lt;module&gt;
+    import pyotp
+PYTHONPATH:
+  /Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/MFA_login_page
+  /Library/Frameworks/Python.framework/Versions/3.11/bin
+  /Library/Frameworks/Python.framework/Versions/3.11/lib/python311.zip
+  /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11
+  /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload
+  /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages</msg>
+</errors>
+</robot>

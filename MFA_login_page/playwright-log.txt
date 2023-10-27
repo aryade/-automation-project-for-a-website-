@@ -1,0 +1,55 @@
+{"level":30,"time":"2023-10-27T08:05:24.332Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Listening on 50038"}
+{"level":30,"time":"2023-10-27T08:05:24.406Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:24.406Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:24.411Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-10-27T08:05:26.613Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-10-27T08:05:26.618Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:26.618Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:26.623Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-27T08:05:26.623Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-10-27T08:05:26.623Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Trace file: "}
+{"level":30,"time":"2023-10-27T08:05:26.695Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Changed active context"}
+{"level":30,"time":"2023-10-27T08:05:26.695Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method newContext"}
+{"level":30,"time":"2023-10-27T08:05:26.699Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-10-27T08:05:26.699Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-27T08:05:29.159Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-10-27T08:05:29.159Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2023-10-27T08:05:30.343Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-10-27T08:05:30.350Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-27T08:05:30.352Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with id=username in page."}
+{"level":30,"time":"2023-10-27T08:05:30.421Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-27T08:05:30.424Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-27T08:05:30.424Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2023-10-27T08:05:30.504Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-27T08:05:30.512Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.516Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.519Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-10-27T08:05:30.520Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-10-27T08:05:30.523Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-10-27T08:05:30.525Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-10-27T08:05:30.529Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Changing current active page: page=133cdb42-56ff-4331-89ec-c1142cf51f71"}
+{"level":30,"time":"2023-10-27T08:05:30.529Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2023-10-27T08:05:30.538Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.543Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.545Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Changed active context"}
+{"level":30,"time":"2023-10-27T08:05:30.545Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Changing current active page: page=133cdb42-56ff-4331-89ec-c1142cf51f71"}
+{"level":30,"time":"2023-10-27T08:05:30.545Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2023-10-27T08:05:30.548Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-10-27T08:05:30.581Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Removed page=8d3c0d4f-1e9e-471f-9c6a-7c9be1466416 from context=cde38188-e47a-4ee7-ac75-7f4c30ff3e6d page stack"}
+{"level":30,"time":"2023-10-27T08:05:30.642Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-10-27T08:05:30.652Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.652Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.656Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2023-10-27T08:05:30.805Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js:9470:15)
+    at PlaywrightServer.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js:9991:59)
+    at PlaywrightServer.setTimeout (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js:10237:57)
+    at handleUnary (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-10-27T08:05:30.815Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.816Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-27T08:05:30.856Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-10-27T08:05:30.856Z","pid":2163,"hostname":"Ganeshs-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}

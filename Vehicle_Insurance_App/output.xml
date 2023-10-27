@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on darwin)" generated="20231027 10:34:07.521" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSuite" source="/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/Vehicle_Insurance_App/TestSuite.robot">
+<test id="s1-t1" name="Create Quote for Car" line="9">
+<kw name="Open Insurance Application">
+<kw name="New Browser" library="Browser">
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20231027 10:34:11.108" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/Vehicle_Insurance_App/browser/traces/ac04c313-4aab-48a9-9d90-f20f30fb70dc"}</msg>
+<msg timestamp="20231027 10:34:14.881" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/Vehicle_Insurance_App/browser/traces/ac04c313-4aab-48a9-9d90-f20f30fb70dc"}</msg>
+<status status="PASS" starttime="20231027 10:34:11.106" endtime="20231027 10:34:14.881"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>locale=en-GB</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20231027 10:34:14.883" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "locale": "en-GB",
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg timestamp="20231027 10:34:14.943" level="INFO">Successfully created context. </msg>
+<msg timestamp="20231027 10:34:14.944" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'locale': 'en-GB', 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<status status="PASS" starttime="20231027 10:34:14.881" endtime="20231027 10:34:14.944"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>http://sampleapp.tricentis.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20231027 10:34:20.617" level="INFO">Successfully initialized new page object and opened url: http://sampleapp.tricentis.com/</msg>
+<status status="PASS" starttime="20231027 10:34:14.944" endtime="20231027 10:34:20.618"/>
+</kw>
+<status status="PASS" starttime="20231027 10:34:11.106" endtime="20231027 10:34:20.618"/>
+</kw>
+<kw name="Enter Vehicle Data for Automobile">
+<kw name="Click" library="Browser">
+<arg>div.main-navigation &gt;&gt; "Automobile"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:20.620" endtime="20231027 10:34:20.994"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=make</arg>
+<arg>text</arg>
+<arg>Audi</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:20.995" endtime="20231027 10:34:21.611"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=engineperformance</arg>
+<arg>110</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:21.611" level="INFO">Fills the text '110' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:21.611" endtime="20231027 10:34:21.707"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=dateofmanufacture</arg>
+<arg>06/12/1980</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:21.708" level="INFO">Fills the text '06/12/1980' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:21.707" endtime="20231027 10:34:21.754"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=numberofseats</arg>
+<arg>text</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:21.755" endtime="20231027 10:34:21.805"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=fuel</arg>
+<arg>text</arg>
+<arg>Petrol</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:21.805" endtime="20231027 10:34:21.844"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=listprice</arg>
+<arg>30000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:21.844" level="INFO">Fills the text '30000' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:21.844" endtime="20231027 10:34:21.880"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=licenseplatenumber</arg>
+<arg>DMK1234</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:21.881" level="INFO">Fills the text 'DMK1234' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:21.880" endtime="20231027 10:34:21.916"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=annualmileage</arg>
+<arg>10000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:21.917" level="INFO">Fills the text '10000' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:21.916" endtime="20231027 10:34:21.948"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>section[style="display: block;"] &gt;&gt; text=Next »</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:21.948" endtime="20231027 10:34:22.133"/>
+</kw>
+<status status="PASS" starttime="20231027 10:34:20.619" endtime="20231027 10:34:22.133"/>
+</kw>
+<kw name="Enter Insurant Data">
+<kw name="Fill Text" library="Browser">
+<arg>id=firstname</arg>
+<arg>Max</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:22.135" level="INFO">Fills the text 'Max' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:22.135" endtime="20231027 10:34:22.225"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=lastname</arg>
+<arg>Mustermann</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:22.226" level="INFO">Fills the text 'Mustermann' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:22.226" endtime="20231027 10:34:22.269"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=birthdate</arg>
+<arg>01/31/1980</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:22.269" level="INFO">Fills the text '01/31/1980' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:22.269" endtime="20231027 10:34:22.309"/>
+</kw>
+<kw name="Check Checkbox" library="Browser">
+<arg>*css=label &gt;&gt; id=gendermale</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.310" endtime="20231027 10:34:22.388"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=streetaddress</arg>
+<arg>Test Street</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:22.388" level="INFO">Fills the text 'Test Street' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:22.388" endtime="20231027 10:34:22.419"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=country</arg>
+<arg>text</arg>
+<arg>Germany</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.419" endtime="20231027 10:34:22.477"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=zipcode</arg>
+<arg>40123</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:22.478" level="INFO">Fills the text '40123' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:22.477" endtime="20231027 10:34:22.517"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=city</arg>
+<arg>Essen</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:22.519" level="INFO">Fills the text 'Essen' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:22.518" endtime="20231027 10:34:22.564"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=occupation</arg>
+<arg>text</arg>
+<arg>Employee</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.564" endtime="20231027 10:34:22.605"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Cliff Diving</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.606" endtime="20231027 10:34:22.689"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>section[style="display: block;"] &gt;&gt; text=Next »</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.689" endtime="20231027 10:34:22.801"/>
+</kw>
+<status status="PASS" starttime="20231027 10:34:22.134" endtime="20231027 10:34:22.802"/>
+</kw>
+<kw name="Enter Product Data">
+<kw name="Fill Text" library="Browser">
+<arg>id=startdate</arg>
+<arg>06/01/2023</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:22.803" level="INFO">Fills the text '06/01/2023' in the given field.</msg>
+<status status="PASS" starttime="20231027 10:34:22.803" endtime="20231027 10:34:22.843"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=insurancesum</arg>
+<arg>text</arg>
+<arg>7.000.000,00</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.843" endtime="20231027 10:34:22.873"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=meritrating</arg>
+<arg>text</arg>
+<arg>Bonus 1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.873" endtime="20231027 10:34:22.908"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=damageinsurance</arg>
+<arg>text</arg>
+<arg>No Coverage</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.908" endtime="20231027 10:34:22.938"/>
+</kw>
+<kw name="Check Checkbox" library="Browser">
+<arg>*css=label &gt;&gt; id=EuroProtection</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:22.938" endtime="20231027 10:34:23.018"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=courtesycar</arg>
+<arg>text</arg>
+<arg>Yes</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:23.019" endtime="20231027 10:34:23.050"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>section[style="display: block;"] &gt;&gt; text=Next »</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231027 10:34:23.050" endtime="20231027 10:34:23.172"/>
+</kw>
+<status status="PASS" starttime="20231027 10:34:22.803" endtime="20231027 10:34:23.172"/>
+</kw>
+<kw name="Select Price Option">
+<kw name="Click" library="Browser">
+<arg>*css=label &gt;&gt; css=[value=${price_option}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20231027 10:34:33.439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231027 10:34:33.439" level="INFO">See also file:///Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/Vehicle_Insurance_App/playwright-log.txt for additional details.</msg>
+<msg timestamp="20231027 10:34:33.440" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for locator('label').locator('[value=Silver]')
+  locator resolved to &lt;label onclick="" class="choosePrice ideal-radiocheck-l…&gt;…&lt;/label&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
+<status status="FAIL" starttime="20231027 10:34:23.173" endtime="20231027 10:34:33.490"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>section[style="display: block;"] &gt;&gt; text=Next »</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20231027 10:34:33.491" endtime="20231027 10:34:33.491"/>
+</kw>
+<status status="FAIL" starttime="20231027 10:34:23.172" endtime="20231027 10:34:33.491"/>
+</kw>
+<kw name="Send Quote">
+<status status="NOT RUN" starttime="20231027 10:34:33.491" endtime="20231027 10:34:33.492"/>
+</kw>
+<kw name="End Test">
+<status status="NOT RUN" starttime="20231027 10:34:33.492" endtime="20231027 10:34:33.492"/>
+</kw>
+<status status="FAIL" starttime="20231027 10:34:11.102" endtime="20231027 10:34:33.492">TimeoutError: locator.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for locator('label').locator('[value=Silver]')
+  locator resolved to &lt;label onclick="" class="choosePrice ideal-radiocheck-l…&gt;…&lt;/label&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+</test>
+<status status="FAIL" starttime="20231027 10:34:07.524" endtime="20231027 10:34:33.765"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestSuite">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231027 10:34:07.525" level="ERROR">Error in file '/Users/ganesh/Desktop/webapplicationtesting_projects/automation-project-for-a-website-/Vehicle_Insurance_App/TestSuite.robot' on line 60: Creating keyword 'Set Browser Timeout' failed: Invalid argument specification: Multiple errors:
+- Invalid argument syntax '${timeout} '.
+- Only normal arguments accept default values, dictionary arguments like '${timeout} ' do not.
+- Invalid argument syntax 'Set Browser Timeout'.
+- Non-default argument after default arguments.
+- Invalid argument syntax '1m 30 seconds'.
+- Non-default argument after default arguments.</msg>
+</errors>
+</robot>
